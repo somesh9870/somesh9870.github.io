@@ -82,7 +82,7 @@ export default function Navbar() {
           spacing={6}
         >
           <Button
-            class="nav-link resume"
+            className="nav-link resume"
             as={"a"}
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"sm"}
@@ -122,9 +122,10 @@ const DesktopNav = () => {
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
-            <PopoverTrigger class={navItem.class}>
+            <PopoverTrigger>
               <Link
                 p={2}
+                className={navItem.class}
                 href={navItem.href}
                 fontSize={"sm"}
                 fontWeight={500}

@@ -24,7 +24,7 @@ import { Box, Text, Heading } from "@chakra-ui/react";
 
 function About() {
   return (
-    <Box textAlign="center" py={12} id="about" class="about section">
+    <Box textAlign="center" py={12} id="about" className="about section">
       <Heading as="h2" size="2xl" mb={4}>
         About Me
       </Heading>
