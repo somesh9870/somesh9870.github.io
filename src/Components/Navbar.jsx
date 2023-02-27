@@ -82,6 +82,7 @@ export default function Navbar() {
           spacing={6}
         >
           <Button
+            class="nav-link resume"
             as={"a"}
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"sm"}
@@ -121,10 +122,10 @@ const DesktopNav = () => {
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
-            <PopoverTrigger>
+            <PopoverTrigger class={navItem.class}>
               <Link
                 p={2}
-                href={navItem.href ?? "#"}
+                href={navItem.href}
                 fontSize={"sm"}
                 fontWeight={500}
                 color={linkColor}
@@ -220,7 +221,7 @@ const MobileNavItem = ({ label, children, href }) => {
       <Flex
         py={2}
         as={Link}
-        href={href ?? "#"}
+        href={href}
         justify={"space-between"}
         align={"center"}
         _hover={{
@@ -268,26 +269,31 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
   {
     label: "Home",
-    href: "#Home",
+    href: "#home",
+    class: "nav-link home",
   },
   {
     label: "About",
-    href: "#About",
+    href: "#about",
+    class: "nav-link about",
   },
   {
     label: "Skills",
-    href: "#Skills",
+    href: "#skills",
+    class: "nav-link skills",
   },
   {
     label: "Projects",
-    href: "#Projects",
+    href: "#projects",
+    class: "nav-link projects",
   },
   {
     label: "Contact",
-    href: "#Contact",
+    href: "#contact",
+    class: "nav-link contact",
   },
   {
     label: "Stats",
-    href: "#Stats",
+    href: "#stats",
   },
 ];
