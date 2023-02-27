@@ -35,7 +35,7 @@ export default function Navbar() {
     }
   }, []);
   return (
-    <Box>
+    <Box id="nav-menu">
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
