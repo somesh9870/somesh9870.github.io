@@ -4,6 +4,7 @@ import React from "react";
 const SkillCard = ({ icon, name }) => {
   return (
     <GridItem
+      className="skills-card"
       p={5}
       rounded="2xl"
       _hover={{

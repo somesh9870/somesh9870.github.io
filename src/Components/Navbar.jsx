@@ -111,7 +111,11 @@ export default function Navbar() {
 
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
-        <Button display={{ base: "flex", md: "none" }} background="#d50032">
+        <Button
+          id="resume-button-1"
+          display={{ base: "flex", md: "none" }}
+          background="#d50032"
+        >
           Resume
         </Button>
       </Collapse>

@@ -46,12 +46,19 @@ function About() {
           About Me
         </Text>
       </Heading>
-      <Text fontSize="xl" maxW="80%" mx="auto">
+      <Text fontSize="xl" maxW="80%" mx="auto" id="user-detail-intro">
         Hi there! My name is Somesh Rawat and I'm a Full Stack Web Developer
         based in [Your Location]. I specialize in MERN Stack and have experience
         working with [Your Skills].
       </Text>
-      <Text fontSize="xl" maxW="3xl" mx="auto" mt={6} mb={30}>
+      <Text
+        fontSize="xl"
+        maxW="3xl"
+        mx="auto"
+        mt={6}
+        mb={30}
+        id="user-detail-intro"
+      >
         A Full Stack Web Developer with expertise in Coding, Data Structures &
         Algorithms, and Design. MERN and JavaScript programmer with extensive
         experience. The ability to quickly learn new technologies and software.

@@ -56,8 +56,9 @@ export const GithubStats = () => {
         <img
           id="github-streak-stats"
           style={{ display: "block", margin: "auto" }}
-          src="https://github-readme-streak-stats.herokuapp.com?user=somesh9870&theme=vision-friendly-dark&hide_border=true"
+          src="https://github-readme-streak-stats.herokuapp.com/?user=somesh9870&theme=bear&hide_border=false"
         />
+        {/* ![somesh9870's Streak](https://github-readme-streak-stats.herokuapp.com/?user=somesh9870&theme=bear&hide_border=false) */}
       </Box>
       <Box
         padding={{ base: "5px", md: "30px" }}
@@ -71,8 +72,9 @@ export const GithubStats = () => {
         <img
           id="github-stats-card"
           style={{ display: "block", margin: "auto" }}
-          src="https://github-readme-stats.vercel.app/api?username=somesh9870&show_icons=true&theme=vision-friendly-dark&hide_border=true"
+          src="https://github-readme-stats.vercel.app/api?username=somesh9870&theme=bear&show_icons=true&hide_border=false&count_private=true"
         />
+        {/* ![somesh9870's Stats](https://github-readme-stats.vercel.app/api?username=somesh9870&theme=bear&show_icons=true&hide_border=false&count_private=true) */}
       </Box>
       <Box
         padding={{ base: "5px", md: "30px" }}
@@ -86,8 +88,9 @@ export const GithubStats = () => {
         <img
           style={{ display: "block", margin: "auto" }}
           id="github-top-langs"
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=somesh9870&layout=compact&theme=vision-friendly-dark&hide_border=true"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=somesh9870&theme=bear&show_icons=true&hide_border=false&layout=compact"
         />
+        {/* ![somesh9870's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=somesh9870&theme=bear&show_icons=true&hide_border=false&layout=compact) */}
       </Box>
     </Box>
   );
