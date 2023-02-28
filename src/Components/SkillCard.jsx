@@ -13,8 +13,10 @@ const SkillCard = ({ icon, name }) => {
       }}
     >
       <VStack>
-        <Image src={icon} w="100%" />
-        <Text fontSize="sm">{name}</Text>
+        <Image className="skills-card-img" src={icon} w="100%" />
+        <Text className="skills-card-name" fontSize="sm">
+          {name}
+        </Text>
       </VStack>
     </GridItem>
   );

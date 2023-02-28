@@ -88,6 +88,7 @@ export default function Navbar() {
           spacing={6}
         >
           <Button
+            id="resume-link-1"
             className="nav-link resume"
             as={"a"}
             display={{ base: "none", md: "inline-flex" }}

@@ -12,8 +12,7 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import SkillCard from "./SkillCard";
-// import SkillCard from "./SkillCard";
-// import { skillsData } from "../../constants/skillsData";
+
 export const skillsData = [
   {
     icon: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
@@ -114,8 +113,12 @@ const SkillsList = () => {
   );
 
   return (
-    <Box h="70%">
-      <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }} mb={"40px"}>
+    <Box minH="100vh" p={20}>
+      <Heading
+        fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+        mb={"40px"}
+        textAlign={"center"}
+      >
         <Text
           as={"span"}
           position={"relative"}

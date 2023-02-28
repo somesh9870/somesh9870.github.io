@@ -8,7 +8,7 @@ const Home = () => {
     <Flex
       id="home"
       mt={20}
-      border="1px solid red"
+      // border="1px solid red"
       direction={{ base: "column", md: "row" }}
       justify={"center"}
       gap={8}
@@ -60,6 +60,7 @@ const Home = () => {
           </Text>
         </Box>
         <Image
+          className="home-img"
           src={profileImage}
           objectFit={"contain"}
           h={{ base: "10%", md: "60%", lg: "60%" }}
