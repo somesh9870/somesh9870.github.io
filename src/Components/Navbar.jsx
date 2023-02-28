@@ -37,6 +37,12 @@ export default function Navbar() {
   return (
     <Box id="nav-menu">
       <Flex
+        position={"fixed"}
+        zIndex={100}
+        left={0}
+        right={0}
+        top={0}
+        marginBottom="10px"
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}

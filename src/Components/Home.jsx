@@ -7,19 +7,20 @@ const Home = () => {
   return (
     <Flex
       id="home"
+      mt={20}
       border="1px solid red"
       direction={{ base: "column", md: "row" }}
       justify={"center"}
       gap={8}
-      h={"100%"}
-      // mt={"30px"}
-      py={{ base: "10px", lg: "10px" }}
+      minH="100vh"
+      pb={{ base: "10px", lg: "120px" }}
       // pb={["10px", "20px", "60px"]}
+      // bg={"black"}
     >
       <Flex
         alignItems="center"
-        direction={{ base: "column", md: "column", lg: "row" }}
-        gap={{ base: 5, md: 5, lg: 20 }}
+        direction={{ base: "column", md: "row", lg: "row" }}
+        gap={{ base: 5, md: 5, lg: 2 }}
         // border="1px solid red"
       >
         <Box
@@ -30,15 +31,17 @@ const Home = () => {
           p={"20px"}
         >
           <Text
-            fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}
+            fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
             fontWeight="bold"
+            mb={2}
           >
             Hello there, I'm
           </Text>
           <Text
             textColor={"#d50032"}
-            fontSize={{ base: "4xl", md: "4xl", lg: "6xl" }}
+            fontSize={{ base: "4xl", md: "4xl", lg: "7xl" }}
             fontWeight="bold"
+            mb={4}
           >
             Somesh Rawat
           </Text>
@@ -59,13 +62,14 @@ const Home = () => {
         <Image
           src={profileImage}
           objectFit={"contain"}
-          h={"80%"}
+          h={{ base: "10%", md: "60%", lg: "60%" }}
           _hover={{
             transition: "0.9s",
             transform: "scale(1.1)",
             // width: "150%",
           }}
-          // borderRadius="50%"
+          borderRadius="50%"
+          bg={"gray"}
         />
       </Flex>
     </Flex>
