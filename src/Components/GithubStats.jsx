@@ -6,10 +6,10 @@ export const GithubStats = () => {
     <Box
       id="stats"
       h="auto"
-      bg="black"
+      // bg="black"
       w="100%"
       fontFamily="Roboto Mono, monospace"
-      color="white"
+      // color="white"
       display="flex"
       flexDirection="column"
       justifyContent="center"
