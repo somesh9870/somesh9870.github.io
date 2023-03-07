@@ -4,7 +4,7 @@ import React from "react";
 const SkillCard = ({ icon, name }) => {
   return (
     <GridItem
-      className="skills-card"
+      
       p={5}
       rounded="2xl"
       _hover={{
@@ -14,10 +14,8 @@ const SkillCard = ({ icon, name }) => {
       }}
     >
       <VStack>
-        <Image className="skills-card-img" src={icon} w="100%" />
-        <Text className="skills-card-name" fontSize="sm">
-          {name}
-        </Text>
+        <Image src={icon} w="100%"/>
+        <Text fontSize="sm">{name}</Text>
       </VStack>
     </GridItem>
   );

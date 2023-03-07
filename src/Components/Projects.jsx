@@ -69,11 +69,12 @@ function Projects() {
           gap={"10px"}
           display={"flex"}
           mb="25px"
-          textAlign="center"
+          justifyContent={'center'}
           fontWeight="400"
         >
           <Text
-            ml={["110px", "200px", "490px"]}
+            // ml={["110px", "200px", "490px"]}
+            textAlign="center"
             color={"#00b9e8"}
             fontSize={["3xl", "4xl", "5xl"]}
           >
