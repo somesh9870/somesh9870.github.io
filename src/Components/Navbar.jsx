@@ -24,6 +24,7 @@ import {
 } from "@chakra-ui/icons";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { useEffect } from "react";
+import SomeshRawat from "../Resume/fw21_0865-Somesh-Rawat-Resume.pdf";
 
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
@@ -88,7 +89,7 @@ export default function Navbar() {
           spacing={6}
         >
           <Button
-            id="resume-link-1"
+            id="resume-button-1"
             className="nav-link resume"
             as={"a"}
             display={{ base: "none", md: "inline-flex" }}
@@ -101,7 +102,23 @@ export default function Navbar() {
               bg: "red.600",
             }}
           >
-            Resume
+            <Link
+              // href="https://drive.google.com/file/d/1tS5hoRo2c2GgTCuYuwhj7IPUvojTTQEj/view?usp=share_link"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1tS5hoRo2c2GgTCuYuwhj7IPUvojTTQEj/view?usp=share_link"
+                  // "https://drive.google.com/uc?export=download&id=1tS5hoRo2c2GgTCuYuwhj7IPUvojTTQEj"
+                )
+              }
+              // target="_blank"
+              // rel="noreferrer"
+              // download="Somesh_Resume"
+              href={SomeshRawat}
+              target={"_blank"}
+              download
+            >
+              Resume
+            </Link>
           </Button>
           <Button onClick={toggleColorMode}>
             {colorMode === "light" ? <MoonIcon /> : <SunIcon />}

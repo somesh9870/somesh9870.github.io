@@ -1,12 +1,19 @@
 import GitHubCalendar from "react-github-calendar";
 import React from "react";
-import { Box, Center, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Heading,
+  Text,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 export const GithubStats = () => {
   return (
     <Box
       id="stats"
       h="auto"
       // bg="black"
+      pt={20}
       w="100%"
       fontFamily="Roboto Mono, monospace"
       // color="white"
@@ -17,10 +24,24 @@ export const GithubStats = () => {
       gap="30px"
     >
       <Center>
-        <Text mt="20" borderBottom="2px solid teal" p="5px" fontSize="22px">
-          {" "}
-          Github
-        </Text>
+        <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }} mb={10}>
+          <Text
+            as={"span"}
+            position={"relative"}
+            _after={{
+              content: "''",
+              width: "full",
+              height: useBreakpointValue({ base: "20%", md: "30%" }),
+              position: "absolute",
+              bottom: 1,
+              left: 0,
+              bg: "#d50032",
+              zIndex: -1,
+            }}
+          >
+            Github
+          </Text>
+        </Heading>
       </Center>
 
       <Box

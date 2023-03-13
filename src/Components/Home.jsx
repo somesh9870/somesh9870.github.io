@@ -42,6 +42,7 @@ const Home = () => {
             fontSize={{ base: "4xl", md: "4xl", lg: "7xl" }}
             fontWeight="bold"
             mb={4}
+            id="user-detail-name"
           >
             Somesh Rawat
           </Text>

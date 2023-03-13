@@ -115,7 +115,7 @@ const SkillsList = () => {
 
   return (
     <Box h="70%">
-      <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
+      <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }} mb={10}>
         <Text
           as={"span"}
           position={"relative"}
@@ -126,7 +126,7 @@ const SkillsList = () => {
             position: "absolute",
             bottom: 1,
             left: 0,
-            bg: "orange.400",
+            bg: "#d50032",
             zIndex: -1,
           }}
         >
@@ -136,7 +136,7 @@ const SkillsList = () => {
       <Tabs variant="unstyled" align="center">
         <TabList my={5}>
           <Tab
-            _selected={{ color: "white", bg: "#ed8936" }}
+            _selected={{ color: "white", bg: "#d50032" }}
             bg="#fff"
             color="black"
             mx={3}
@@ -145,7 +145,7 @@ const SkillsList = () => {
             All
           </Tab>
           <Tab
-            _selected={{ color: "white", bg: "#ed8936" }}
+            _selected={{ color: "white", bg: "#d50032" }}
             bg="white"
             color="black"
             mx={3}
@@ -154,7 +154,7 @@ const SkillsList = () => {
             Frontend
           </Tab>
           <Tab
-            _selected={{ color: "white", bg: "#ed8936" }}
+            _selected={{ color: "white", bg: "#d50032" }}
             bg="#fff"
             color="black"
             mx={3}

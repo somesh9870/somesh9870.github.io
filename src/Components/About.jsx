@@ -46,10 +46,9 @@ function About() {
           About Me
         </Text>
       </Heading>
-      <Text fontSize="xl" maxW="80%" mx="auto" id="user-detail-intro">
-        Hi there! My name is Somesh Rawat and I'm a Full Stack Web Developer
-        based in [Your Location]. I specialize in MERN Stack and have experience
-        working with [Your Skills].
+      <Text fontSize="xl" maxW="80%" mx="auto">
+        Hi there! My name is Somesh Rawat and I am an Aspiring Full Stack
+        Developer (MERN)
       </Text>
       <Text
         fontSize="xl"
@@ -72,7 +71,7 @@ function About() {
         direction={["column", "row", "row"]}
       >
         <Flex>
-          <Button id="resume-link-2" bg={"#d50032"} gap={4} px={10}>
+          <Button id="resume-button-2" bg={"#d50032"} gap={4} px={10}>
             <FiDownload /> <span> Resume</span>
           </Button>
         </Flex>

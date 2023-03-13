@@ -63,13 +63,14 @@ function Projects() {
       color="#ffffff"
       p="30px 0px"
       textAlign="center"
+      pt={20}
     >
       <Box w="85%" m="auto">
         <Box
           gap={"10px"}
           display={"flex"}
           mb="25px"
-          justifyContent={'center'}
+          justifyContent={"center"}
           fontWeight="400"
         >
           <Text
@@ -88,7 +89,7 @@ function Projects() {
           {projectdata &&
             projectdata.map((project) => {
               return (
-                <Box className="proj" bg={"#0c1014"}>
+                <Box className="project-card" bg={"#0c1014"}>
                   <Box
                     display={["inline", "inline", "flex"]}
                     justifyContent="space-between"
