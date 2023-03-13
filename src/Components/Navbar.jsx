@@ -103,16 +103,11 @@ export default function Navbar() {
             }}
           >
             <Link
-              // href="https://drive.google.com/file/d/1tS5hoRo2c2GgTCuYuwhj7IPUvojTTQEj/view?usp=share_link"
               onClick={() =>
                 window.open(
                   "https://drive.google.com/file/d/1tS5hoRo2c2GgTCuYuwhj7IPUvojTTQEj/view?usp=share_link"
-                  // "https://drive.google.com/uc?export=download&id=1tS5hoRo2c2GgTCuYuwhj7IPUvojTTQEj"
                 )
               }
-              // target="_blank"
-              // rel="noreferrer"
-              // download="Somesh_Resume"
               href={SomeshRawat}
               target={"_blank"}
               download

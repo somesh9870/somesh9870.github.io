@@ -4,6 +4,7 @@ import {
   Flex,
   Grid,
   Heading,
+  Link,
   Stack,
   Text,
   useBreakpointValue,
@@ -11,6 +12,7 @@ import {
 import React from "react";
 import { FiDownload } from "react-icons/fi";
 import { BsGithub } from "react-icons/bs";
+import SomeshRawat from "../Resume/fw21_0865-Somesh-Rawat-Resume.pdf";
 
 function About() {
   return (
@@ -72,7 +74,21 @@ function About() {
       >
         <Flex>
           <Button id="resume-button-2" bg={"#d50032"} gap={4} px={10}>
-            <FiDownload /> <span> Resume</span>
+            <Link
+              display={"flex"}
+              // justifyContent="space-between"
+              gap="15px"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1tS5hoRo2c2GgTCuYuwhj7IPUvojTTQEj/view?usp=share_link"
+                )
+              }
+              href={SomeshRawat}
+              target={"_blank"}
+              download
+            >
+              <FiDownload /> <span> Resume</span>
+            </Link>
           </Button>
         </Flex>
         <Flex>
