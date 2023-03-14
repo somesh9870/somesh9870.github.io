@@ -50,13 +50,13 @@ const Contact = () => {
               >
                 Get in Touch
               </Text>
-              <Text
+              {/* <Text
                 fontSize={["14px", "15px", "20px"]}
-                color={"white"}
+                // color={"white"}
                 display={["none", "none", "center"]}
               >
                 Got a project? Reach out and let's work together
-              </Text>
+              </Text> */}
 
               <Box ml={["10px", "100px", "1px"]}>
                 <Box mt={"5px"}>
@@ -66,10 +66,11 @@ const Contact = () => {
                       fontSize={["20px", "30px", "40px"]}
                       mt={"5px"}
                     >
-                      <TfiEmail color="white" />
+                      <TfiEmail />
                     </Text>
                     <Text
-                      color={"white"}
+                      id="contact-email"
+                      // color={"white"}
                       fontSize={["14px", "20px", "22px"]}
                       ml={["8%", "", ""]}
                       mt={["4px", "", ""]}
@@ -96,11 +97,12 @@ const Contact = () => {
                         href="https://github.com/somesh9870"
                         fontSize={["20px", "30px", "40px"]}
                       >
-                        <AiFillGithub color="white" />
+                        <AiFillGithub />
                       </a>
                     </Text>
                     <Text
-                      color={"white"}
+                      id="contact-github"
+                      // color={"white"}
                       fontSize={["14px", "20px", "22px"]}
                       ml={["8%", "", ""]}
                       mt={["3px", "", ""]}
@@ -128,11 +130,12 @@ const Contact = () => {
                         alt=""
                         fontSize={["20px", "30px", "40px"]}
                       >
-                        <FaLinkedin color={"#4db5ff"} />
+                        <FaLinkedin />
                       </a>
                     </Text>
                     <Text
-                      color={"white"}
+                      id="contact-linkedin"
+                      // color={"white"}
                       fontSize={["14px", "20px", "22px"]}
                       ml={["8%", "", ""]}
                       mt={["1px", "", ""]}
@@ -159,11 +162,12 @@ const Contact = () => {
                         href="https://github.com/somesh9870"
                         fontSize={["20px", "30px", "40px"]}
                       >
-                        <IoCall color="white" />
+                        <IoCall />
                       </a>
                     </Text>
                     <Text
-                      color={"white"}
+                      id="contact-phone"
+                      // color={"white"}
                       fontSize={["14px", "20px", "22px"]}
                       ml={["8%", "", ""]}
                       mt={["1px", "", ""]}
@@ -202,14 +206,14 @@ const Contact = () => {
                       name="name"
                       placeholder="Name"
                       size={["md", "lg", "lg"]}
-                      color={"white"}
+                      // color={"white"}
                     />
                     <Input
                       type="email"
                       name="email"
                       placeholder="Email"
                       size={["md", "lg", "lg"]}
-                      color={"white"}
+                      // color={"white"}
                       ml={"20px"}
                     />
                   </Flex>
@@ -221,7 +225,7 @@ const Contact = () => {
                     name="number"
                     placeholder="Mobile Number"
                     size={["md", "lg", "lg"]}
-                    color={"white"}
+                    // color={"white"}
                     m={"auto"}
                     mt={"8%"}
                   />
@@ -233,7 +237,7 @@ const Contact = () => {
                     name="message"
                     placeholder="Message"
                     size={["md", "lg", "lg"]}
-                    color={"white"}
+                    // color={"white"}
                     m={"auto"}
                     mt={"8%"}
                   />
