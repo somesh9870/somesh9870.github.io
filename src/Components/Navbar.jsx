@@ -89,8 +89,8 @@ export default function Navbar() {
           spacing={6}
         >
           <Button
-            // id="resume-button-1"
-            id="resume-link-1"
+            id="resume-button-1"
+            // id="resume-link-1"
             className="nav-link resume"
             as={"a"}
             display={{ base: "none", md: "inline-flex" }}
@@ -125,8 +125,7 @@ export default function Navbar() {
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
         <Button
-          // id="resume-button-1"
-          id="resume-link-2"
+          id="resume-link-1"
           display={{ base: "flex", md: "none" }}
           background="#d50032"
         >

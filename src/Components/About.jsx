@@ -75,6 +75,7 @@ function About() {
         <Flex>
           <Button id="resume-button-2" bg={"#d50032"} gap={4} px={10}>
             <Link
+              id="resume-link-2"
               display={"flex"}
               // justifyContent="space-between"
               gap="15px"
