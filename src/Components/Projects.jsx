@@ -2,57 +2,63 @@ import { Box, Image, Text, Button } from "@chakra-ui/react";
 import { MdSlideshow } from "react-icons/md";
 import { BsGithub } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
+import macMatch from "../Images/MacMatch.png";
+import styleIncore from "../Images/styleIncore.png";
+import internThrive from "../Images/internThrive.png";
+import phramEasy from "../Images/pharmeasy.png";
 
 import React from "react";
 
 function Projects() {
   let projectdata = [
     {
-      name: "PharmEasy",
-      img: "https://rohithanss.github.io/pharmeasy.png",
+      name: "MacMatch",
+      // img: "https://user-images.githubusercontent.com/112812835/221432362-7a9776e1-1b0e-48c2-876f-af43ebb77be3.png",
+      img: macMatch,
       type: "Group",
-      desc: "PharmEasy is an online pharmacy store that allows customers to order prescription and over-the-counter medications and have them delivered to their doorstep. In addition to selling medications, PharmEasy also offers a range of healthcare services, including lab test bookings, doctor consultations, and online healthcare products.",
-      techstack: " HTML, CSS, JavaScript, and JSON server",
-      livelink: "https://wish-kart.vercel.app/",
-      gitlink: "https://github.com/rohithanss/Pharmeasy-Clone",
+      desc: "It is an e-commerce website which provides various types of electronic products with online services.",
+      techstack:
+        " React, Redux, JavaScript, Redux-Thunk, Chakra UI and Material UI",
+      livelink: "https://murky-pan.vercel.app/",
+      gitlink: "https://github.com/Namrata0407/murky-pan-2202",
     },
     {
       name: "PharmEasy",
-      img: "https://rohithanss.github.io/pharmeasy.png",
+      img: phramEasy,
       type: "Group",
       desc: "PharmEasy is an online pharmacy store that allows customers to order prescription and over-the-counter medications and have them delivered to their doorstep. In addition to selling medications, PharmEasy also offers a range of healthcare services, including lab test bookings, doctor consultations, and online healthcare products.",
       techstack: " HTML, CSS, JavaScript, and JSON server",
-      livelink: "https://wish-kart.vercel.app/",
+      livelink: "https://marspharmacy.netlify.app/",
       gitlink: "https://github.com/rohithanss/Pharmeasy-Clone",
     },
     {
-      name: "PharmEasy",
-      img: "https://rohithanss.github.io/pharmeasy.png",
+      name: "Intern Thrive",
+      img: internThrive,
       type: "Group",
-      desc: "PharmEasy is an online pharmacy store that allows customers to order prescription and over-the-counter medications and have them delivered to their doorstep. In addition to selling medications, PharmEasy also offers a range of healthcare services, including lab test bookings, doctor consultations, and online healthcare products.",
-      techstack: " HTML, CSS, JavaScript, and JSON server",
-      livelink: "https://wish-kart.vercel.app/",
-      gitlink: "https://github.com/rohithanss/Pharmeasy-Clone",
+      desc: "It is a platform connecting Companies and potential employees in various sectors.",
+      techstack: " HTML, CSS, JavaScript, Bootstrap",
+      livelink: "https://intern-thrive.netlify.app/",
+      gitlink: "https://github.com/Kavin0721/lumpy-pocket-4371",
     },
 
     {
-      name: "PharmEasy",
-      img: "https://rohithanss.github.io/pharmeasy.png",
+      name: "STYLE-INCORE",
+      img: styleIncore,
       type: "Group",
-      desc: "PharmEasy is an online pharmacy store that allows customers to order prescription and over-the-counter medications and have them delivered to their doorstep. In addition to selling medications, PharmEasy also offers a range of healthcare services, including lab test bookings, doctor consultations, and online healthcare products.",
-      techstack: " HTML, CSS, JavaScript, and JSON server",
-      livelink: "https://wish-kart.vercel.app/",
-      gitlink: "https://github.com/rohithanss/Pharmeasy-Clone",
+      desc: "It is a fashion-forward apparel brand and style community whose purpose is to create confidence and inspire self-expression. From wardrobe essentials to the latest trends, we outfit doers, makers, movers and shakers with clothing designed for real-life versatility.",
+      techstack: "React, JavaScript, Chakra UI ",
+      livelink: "https://style-incore-express.netlify.app/",
+      gitlink: "https://github.com/somesh9870/express",
     },
-    {
-      name: "PharmEasy",
-      img: "https://rohithanss.github.io/pharmeasy.png",
-      type: "Group",
-      desc: "PharmEasy is an online pharmacy store that allows customers to order prescription and over-the-counter medications and have them delivered to their doorstep. In addition to selling medications, PharmEasy also offers a range of healthcare services, including lab test bookings, doctor consultations, and online healthcare products.",
-      techstack: " HTML, CSS, JavaScript, and JSON server",
-      livelink: "https://wish-kart.vercel.app/",
-      gitlink: "https://github.com/rohithanss/Pharmeasy-Clone",
-    },
+    // {
+    //   name: "PharmEasy",
+    //   img: "https://rohithanss.github.io/pharmeasy.png",
+    //   type: "Group",
+    //   desc: "PharmEasy is an online pharmacy store that allows customers to order prescription and over-the-counter medications and have them delivered to their doorstep. In addition to selling medications, PharmEasy also offers a range of healthcare services, including lab test bookings, doctor consultations, and online healthcare products.",
+    //   techstack: " HTML, CSS, JavaScript, and JSON server",
+    //   livelink: "https://marspharmacy.netlify.app/",
+    //   gitlink: "https://github.com/rohithanss/Pharmeasy-Clone",
+    // },
   ];
 
   return (
@@ -108,9 +114,9 @@ function Projects() {
                       >
                         {project.name}
                       </Text>
-                      <Text fontSize={["xl", "2xl", "3xl"]}>
+                      {/* <Text fontSize={["xl", "2xl", "3xl"]}>
                         ( {project.type} )
-                      </Text>
+                      </Text> */}
                       <Text
                         className="project-description"
                         textAlign={"center"}
