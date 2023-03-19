@@ -8,6 +8,7 @@ import {
   Collapse,
   Icon,
   Link,
+  Image,
   Popover,
   PopoverTrigger,
   PopoverContent,
@@ -25,6 +26,7 @@ import {
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { useEffect } from "react";
 import SomeshRawat from "../Resume/fw21_0865-Somesh-Rawat-Resume.pdf";
+import NameLogo from "../Images/Logo.png";
 
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
@@ -74,7 +76,11 @@ export default function Navbar() {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-            Somesh Rawat
+            <Image
+              borderRadius="5px"
+              width={{ base: "100%", md: "180px", lg: "180px" }}
+              src={NameLogo}
+            />
           </Text>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -142,7 +148,7 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
-    <Stack direction={"row"} spacing={4}>
+    <Stack direction={"row"} spacing={4} alignItems="center">
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
