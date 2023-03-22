@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <Flex
       id="home"
-      mt={20}
+      mt={10}
       // border="1px solid red"
       direction={{ base: "column", md: "row" }}
       justify={"center"}
@@ -38,7 +38,7 @@ const Home = () => {
             Hello there, I'm
           </Text>
           <Text
-            textColor={"#d50032"}
+            textColor={"#bb0606"}
             fontSize={{ base: "4xl", md: "4xl", lg: "7xl" }}
             fontWeight="bold"
             mb={4}

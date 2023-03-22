@@ -148,7 +148,7 @@ const SkillsList = () => {
             position: "absolute",
             bottom: 1,
             left: 0,
-            bg: "#d50032",
+            bg: "#bb0606",
             zIndex: -1,
           }}
         >
@@ -158,7 +158,7 @@ const SkillsList = () => {
       <Tabs variant="unstyled" align="center">
         <TabList my={5}>
           <Tab
-            _selected={{ color: "white", bg: "#d50032" }}
+            _selected={{ color: "white", bg: "#bb0606" }}
             bg="#fff"
             color="black"
             mx={3}
@@ -167,7 +167,7 @@ const SkillsList = () => {
             All
           </Tab>
           <Tab
-            _selected={{ color: "white", bg: "#d50032" }}
+            _selected={{ color: "white", bg: "#bb0606" }}
             bg="white"
             color="black"
             mx={3}
@@ -176,7 +176,7 @@ const SkillsList = () => {
             Frontend
           </Tab>
           <Tab
-            _selected={{ color: "white", bg: "#d50032" }}
+            _selected={{ color: "white", bg: "#bb0606" }}
             bg="#fff"
             color="black"
             mx={3}
@@ -185,7 +185,7 @@ const SkillsList = () => {
             Backend
           </Tab>
           <Tab
-            _selected={{ color: "white", bg: "#d50032" }}
+            _selected={{ color: "white", bg: "#bb0606" }}
             bg="#fff"
             color="black"
             mx={3}

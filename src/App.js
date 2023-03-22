@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
@@ -7,10 +6,11 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import { GithubStats } from "./Components/GithubStats";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 
 function App() {
   return (
-    <div className="App">
+    <Box bg={useColorModeValue('#ecf9ff','#171717')} className="App">    //e8f9fd
       <Navbar />
       <Home />
       <About />
@@ -18,7 +18,7 @@ function App() {
       <Projects />
       <GithubStats />
       <Contact />
-    </div>
+    </Box>
   );
 }
 

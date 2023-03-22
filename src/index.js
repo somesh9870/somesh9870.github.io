@@ -5,6 +5,27 @@ import App from "./App";
 import { ChakraProvider } from "@chakra-ui/react";
 import reportWebVitals from "./reportWebVitals";
 
+document.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+});
+document.onkeydown = (e) => {
+  if (e.keyCode === 123) {
+    return false;
+  }
+  if (e.ctrlKey && e.keyCode && e.shiftKey === "I".charCodeAt(0)) {
+    return false;
+  }
+  if (e.ctrlKey && e.keyCode && e.shiftKey === "C".charCodeAt(0)) {
+    return false;
+  }
+  if (e.ctrlKey && e.keyCode && e.shiftKey === "J".charCodeAt(0)) {
+    return false;
+  }
+  if (e.ctrlKey && e.keyCode === "U".charCodeAt(0)) {
+    return false;
+  }
+};
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ChakraProvider>

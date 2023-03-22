@@ -1,4 +1,4 @@
-import { Box, Image, Text, Button } from "@chakra-ui/react";
+import { Box, Image, Text, Button, useColorModeValue } from "@chakra-ui/react";
 import { MdSlideshow } from "react-icons/md";
 import { BsGithub } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
@@ -44,7 +44,7 @@ function Projects() {
     {
       name: "STYLE-INCORE",
       img: styleIncore,
-      type: "Group",
+      type: "Individual",
       desc: "It is a fashion-forward apparel brand and style community whose purpose is to create confidence and inspire self-expression. From wardrobe essentials to the latest trends, we outfit doers, makers, movers and shakers with clothing designed for real-life versatility.",
       techstack: "React, JavaScript, Chakra UI ",
       livelink: "https://style-incore-express.netlify.app/",
@@ -66,7 +66,7 @@ function Projects() {
       id="projects"
       className="project"
       w="full"
-      color="#ffffff"
+      // color="#ffffff"
       p="30px 0px"
       textAlign="center"
       pt={20}
@@ -82,20 +82,21 @@ function Projects() {
           <Text
             // ml={["110px", "200px", "490px"]}
             textAlign="center"
-            color={"#00b9e8"}
+            // color={useColorModeValue('','')}
+            fontWeight={700}
             fontSize={["3xl", "4xl", "5xl"]}
           >
             Projects
           </Text>
           <Text mt={["8px", "10px", "15px"]} fontSize={["3xl", "4xl", "5xl"]}>
-            <MdSlideshow className="bounce" color={"#00b9e8"} />
+            <MdSlideshow className="bounce" color={"#bb0606"} />
           </Text>
         </Box>
         <Box display="grid" gap="50px" gridTemplateColumns="repeat(1, 1fr)">
           {projectdata &&
             projectdata.map((project) => {
               return (
-                <Box className="project-card" bg={"#0c1014"}>
+                <Box className="project-card" bg={"#0c1014"} color="#ffffff">
                   <Box
                     display={["inline", "inline", "flex"]}
                     justifyContent="space-between"
@@ -146,13 +147,13 @@ function Projects() {
                           as="a"
                           target="_blank"
                           href={project.livelink}
-                          _hover={{ color: "blue" }}
+                          _hover={{ color: "#bb0606" }}
                           mt="10px"
                           w={"100px"}
                           p={["5px 5px", "10px 10px", "10px 10px"]}
                           fontSize={["md", "lg", "lg"]}
-                          color="black"
-                          border="1px solid white"
+                          // color="black"
+                          // border="1px solid white"
                           variant="solid"
                           leftIcon={<BiLinkExternal />}
                         >
@@ -163,13 +164,13 @@ function Projects() {
                           as="a"
                           target="_blank"
                           href={project.gitlink}
-                          _hover={{ color: "blue" }}
+                          _hover={{ color: "#bb0606" }}
                           mt="10px"
                           w={"100px"}
                           p={["5px 5px", "10px 10px", "10px 10px"]}
                           fontSize={["md", "lg", "lg"]}
-                          color="black"
-                          border="1px solid white"
+                          // color="black"
+                          // border="1px solid white"
                           variant="solid"
                           leftIcon={<BsGithub />}
                         >

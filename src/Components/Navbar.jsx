@@ -46,7 +46,7 @@ export default function Navbar() {
         right={0}
         top={0}
         marginBottom="10px"
-        bg={useColorModeValue("white", "gray.800")}
+        bg={useColorModeValue("#d6e5fa", "#232323")}
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
         py={{ base: 2 }}
@@ -78,7 +78,7 @@ export default function Navbar() {
           >
             <Image
               borderRadius="5px"
-              width={{ base: "100%", md: "180px", lg: "180px" }}
+              width={{ base: "100%", md: "220px", lg: "220px" }}
               src={NameLogo}
             />
           </Text>
@@ -103,13 +103,14 @@ export default function Navbar() {
             fontSize={"sm"}
             fontWeight={600}
             color={"white"}
-            bg={"#d50032"}
+            bg={"#bb0606"}
             href={"#"}
             _hover={{
               bg: "red.600",
             }}
           >
             <Link
+              id="resume-link-1"
               onClick={() =>
                 window.open(
                   "https://drive.google.com/file/d/1tS5hoRo2c2GgTCuYuwhj7IPUvojTTQEj/view?usp=share_link"
@@ -130,11 +131,7 @@ export default function Navbar() {
 
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
-        <Button
-          id="resume-link-1"
-          display={{ base: "flex", md: "none" }}
-          background="#d50032"
-        >
+        <Button display={{ base: "flex", md: "none" }} background="#bb0606">
           Resume
         </Button>
       </Collapse>
@@ -157,13 +154,13 @@ const DesktopNav = () => {
                 p={2}
                 className={navItem.class}
                 href={navItem.href}
-                fontSize={"sm"}
+                fontSize={"lg"}
                 fontWeight={500}
                 color={linkColor}
                 _hover={{
                   textDecoration: "none",
-                  color: "#d50032",
-                  borderBottom: "1px solid #d50032",
+                  color: "#bb0606",
+                  borderBottom: "1px solid #bb0606",
                 }}
               >
                 {navItem.label}

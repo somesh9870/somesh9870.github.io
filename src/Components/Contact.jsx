@@ -7,6 +7,7 @@ import {
   Flex,
   Textarea,
   Button,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
@@ -17,13 +18,16 @@ const Contact = () => {
   return (
     // display={["inline", "inline", "inline"]}
     <>
-      <Box h={["1000px", "1050px", "700px"]}>
+      <Box
+        h={["1000px", "1050px", "700px"]}
+        color={useColorModeValue("black", "white")}
+      >
         <Text
           mb="25px"
           textAlign="center"
-          fontWeight="400"
+          fontWeight="700"
           fontSize={["3xl", "4xl", "5xl"]}
-          color={"#00b9e8"}
+          // color={"#00b9e8"}
           mt={"10%"}
         >
           Contact Me
@@ -36,7 +40,7 @@ const Contact = () => {
           id="contact"
           w={["100%", "97%", "79%"]}
           fontSize={30}
-          color={"black"}
+          // color={"black"}
           m={"auto"}
           mt={"5%"}
           h={"500px"}
@@ -44,7 +48,7 @@ const Contact = () => {
           <Box w={["70%", "70%", "50%"]} ml={["15%", "15%", "5%"]}>
             <Stack>
               <Text
-                color={"#00b9e8"}
+                color={useColorModeValue("red", "red")}
                 fontSize={["20px", "25px", "30px"]}
                 textAlign={["center", "center", "left"]}
               >
@@ -187,13 +191,17 @@ const Contact = () => {
             <Box
               w={["70%", "70%", "90%"]}
               mt={["100px", "100px", "0px"]}
-              h={"400px"}
+              // h={"400px"}
               ml={["70px", "100px", "-5%"]}
+              // boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
+              boxShadow="rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px"
+              p="35px"
+              borderRadius={"20px"}
             >
               <Stack>
                 <Stack>
                   <Text
-                    color={"#00b9e8"}
+                    color={"red"}
                     fontSize={["20px", "25px", "30px"]}
                     textAlign={["center", "center", "left"]}
                     mt={["-10px", "", ""]}
@@ -250,9 +258,9 @@ const Contact = () => {
                     mt={"5%"}
                     ml={["56px", "170px", "100px"]}
                     size="lg"
-                    color={"black"}
+                    color={"white"}
                     fontSize={["15px", "19px", "20px"]}
-                    bg={"white"}
+                    bg={"#bb0606"}
                     _hover={{
                       background: "#00b9e8",
                       color: "black",

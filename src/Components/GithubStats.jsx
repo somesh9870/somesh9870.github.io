@@ -35,7 +35,7 @@ export const GithubStats = () => {
               position: "absolute",
               bottom: 1,
               left: 0,
-              bg: "#d50032",
+              bg: "#bb0606",
               zIndex: -1,
             }}
           >
@@ -49,8 +49,8 @@ export const GithubStats = () => {
         display="flex"
         justifyContent={"center"}
         alignItems="center"
-        boxShadow="rgb(36, 36, 58) 3px 3px 5px"
-        borderRadius="20px"
+        boxShadow="rgb(0, 0, 0) 3px 2px 10px 1px" 
+        borderRadius="10px"
         width={{ base: "90%", md: "70%" }}
       >
         <GitHubCalendar
@@ -67,7 +67,7 @@ export const GithubStats = () => {
       </Box>
       <Box
         padding={{ base: "5px", md: "30px" }}
-        boxShadow="rgb(36, 36, 58) 3px 3px 5px"
+        boxShadow="rgb(0, 0, 0) 3px 2px 10px 1px" 
         borderRadius="20px"
         width="70%"
       >
@@ -83,8 +83,8 @@ export const GithubStats = () => {
       </Box>
       <Box
         padding={{ base: "5px", md: "30px" }}
-        boxShadow="rgb(36, 36, 58) 3px 3px 5px"
-        borderRadius="20px"
+        boxShadow="rgb(0, 0, 0) 3px 2px 10px 1px"
+        borderRadius="10px"
         width="70%"
       >
         <Text style={{ base: "10px", md: "20px" }} textAlign="center">
@@ -99,7 +99,7 @@ export const GithubStats = () => {
       </Box>
       <Box
         padding={{ base: "5px", md: "30px" }}
-        boxShadow="rgb(36, 36, 58) 3px 3px 5px"
+        boxShadow="rgb(0, 0, 0) 3px 2px 10px 1px" 
         borderRadius="20px"
         width="70%"
       >
