@@ -38,14 +38,16 @@ export default function Navbar() {
     }
   }, []);
   return (
-    <Box id="nav-menu">
+    <Box
+      id="nav-menu"
+      position={"fixed"}
+      left={0}
+      right={0}
+      top={0}
+      zIndex={2}
+      // marginBottom="10px"
+    >
       <Flex
-        position={"fixed"}
-        zIndex={100}
-        left={0}
-        right={0}
-        top={0}
-        marginBottom="10px"
         bg={useColorModeValue("#d6e5fa", "#232323")}
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}

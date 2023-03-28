@@ -6,9 +6,7 @@ import {
   Heading,
   Image,
   Link,
-  Stack,
   Text,
-  useBreakpointValue,
 } from "@chakra-ui/react";
 import React from "react";
 import { FiDownload } from "react-icons/fi";

@@ -10,7 +10,7 @@ import { Box, useColorModeValue } from "@chakra-ui/react";
 
 function App() {
   return (
-    <Box bg={useColorModeValue('#ecf9ff','#171717')} className="App">    //e8f9fd
+    <Box bg={useColorModeValue("#ecf9ff", "#171717")} className="App">
       <Navbar />
       <Home />
       <About />

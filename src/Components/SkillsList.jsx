@@ -184,6 +184,18 @@ const SkillsList = () => {
           >
             Backend
           </Tab>
+          {/* <Tab
+            _selected={{ color: "white", bg: "#bb0606" }}
+            bg="#fff"
+            color="black"
+            mx={3}
+            rounded="md"
+          >
+            Tools
+          </Tab> */}
+        </TabList>
+
+        <TabList my={5}>
           <Tab
             _selected={{ color: "white", bg: "#bb0606" }}
             bg="#fff"
@@ -194,6 +206,7 @@ const SkillsList = () => {
             Tools
           </Tab>
         </TabList>
+
         <TabPanels>
           <TabPanel paddingBottom="100px">
             <Grid

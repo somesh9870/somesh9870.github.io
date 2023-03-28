@@ -21,6 +21,7 @@ const Home = () => {
         alignItems="center"
         direction={{ base: "column", md: "row", lg: "row" }}
         gap={{ base: 5, md: 5, lg: 2 }}
+        padding="20px"
         // border="1px solid red"
       >
         <Box
@@ -46,7 +47,7 @@ const Home = () => {
           >
             Somesh Rawat
           </Text>
-          <Text fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}>
+          <Text fontSize={{ base: "xl", md: "3xl", lg: "4xl" }}>
             <Typewriter
               options={{
                 strings: [
@@ -64,7 +65,8 @@ const Home = () => {
           className="home-img"
           src={profileImage}
           objectFit={"contain"}
-          h={{ base: "10%", md: "60%", lg: "60%" }}
+          // h={{ base: "5%", md: "60%", lg: "60%" }}
+          w={{ base: "70%", md: "30%", lg: "30%"}}
           _hover={{
             transition: "0.9s",
             transform: "scale(1.1)",

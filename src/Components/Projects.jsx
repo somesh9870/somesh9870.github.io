@@ -1,4 +1,11 @@
-import { Box, Image, Text, Button, useColorModeValue } from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  Text,
+  Button,
+  useColorModeValue,
+  Flex,
+} from "@chakra-ui/react";
 import { MdSlideshow } from "react-icons/md";
 import { BsGithub } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
@@ -18,7 +25,7 @@ function Projects() {
       type: "Group",
       desc: "It is an e-commerce website which provides various types of electronic products with online services.",
       techstack:
-        " React, Redux, JavaScript, Redux-Thunk, Chakra UI and Material UI",
+        " React | Redux | JavaScript | Redux-Thunk | Chakra UI and Material UI",
       livelink: "https://murky-pan.vercel.app/",
       gitlink: "https://github.com/Namrata0407/murky-pan-2202",
     },
@@ -26,8 +33,8 @@ function Projects() {
       name: "PharmEasy",
       img: phramEasy,
       type: "Group",
-      desc: "PharmEasy is an online pharmacy store that allows customers to order prescription and over-the-counter medications and have them delivered to their doorstep. In addition to selling medications, PharmEasy also offers a range of healthcare services, including lab test bookings, doctor consultations, and online healthcare products.",
-      techstack: " HTML, CSS, JavaScript, and JSON server",
+      desc: "PharmEasy is an online pharmacy store that allows customers to order prescription and over-the-counter medications and have them delivered to their doorstep. ",
+      techstack: " HTML | CSS | JavaScript | and JSON server",
       livelink: "https://marspharmacy.netlify.app/",
       gitlink: "https://github.com/rohithanss/Pharmeasy-Clone",
     },
@@ -36,7 +43,7 @@ function Projects() {
       img: internThrive,
       type: "Group",
       desc: "It is a platform connecting Companies and potential employees in various sectors.",
-      techstack: " HTML, CSS, JavaScript, Bootstrap",
+      techstack: " HTML | CSS | JavaScript | Bootstrap",
       livelink: "https://intern-thrive.netlify.app/",
       gitlink: "https://github.com/Kavin0721/lumpy-pocket-4371",
     },
@@ -45,8 +52,8 @@ function Projects() {
       name: "STYLE-INCORE",
       img: styleIncore,
       type: "Individual",
-      desc: "It is a fashion-forward apparel brand and style community whose purpose is to create confidence and inspire self-expression. From wardrobe essentials to the latest trends, we outfit doers, makers, movers and shakers with clothing designed for real-life versatility.",
-      techstack: "React, JavaScript, Chakra UI ",
+      desc: "It is a fashion-forward apparel brand and style community  which provides various types of clothing products with online services.",
+      techstack: "React | JavaScript | Chakra UI ",
       livelink: "https://style-incore-express.netlify.app/",
       gitlink: "https://github.com/somesh9870/express",
     },
@@ -96,9 +103,10 @@ function Projects() {
           {projectdata &&
             projectdata.map((project) => {
               return (
-                <Box className="project-card" bg={"#0c1014"} color="#ffffff">
+                <Box className="project-card" bg={"#0c1014"}>
                   <Box
                     display={["inline", "inline", "flex"]}
+                    rowGap="60px"
                     justifyContent="space-between"
                     border={"3px solid #1877f2"}
                   >
@@ -108,10 +116,14 @@ function Projects() {
                       src={project.img}
                       alt="project-thumbnail"
                     />
-                    <Box w={["100%", "97%", "39%"]} m="auto">
+                    <Box w={["100%", "97%", "39%"]} m="auto" p={"30px"}>
                       <Text
                         fontSize={["2xl", "3xl", "4xl"]}
                         className="project-title"
+                        // color="#fff"
+                        color={"#bb0606"}
+                        mb="30px"
+                        mt={"20px"}
                       >
                         {project.name}
                       </Text>
@@ -120,22 +132,38 @@ function Projects() {
                       </Text> */}
                       <Text
                         className="project-description"
-                        textAlign={"center"}
-                        w={["100%", "90%", "70%"]}
+                        textAlign={"left"}
+                        w={["100%", "90%", "90%"]}
                         m="auto"
                         fontSize={["sm", "md", "md"]}
+                        color="#fff"
+                        mb="30px"
                       >
                         {project.desc}
                       </Text>
-                      <Text
-                        className="project-tech-stack"
-                        w="85%"
-                        m="auto"
-                        mt="10px"
-                        fontSize={["md", "mlgd", "lg"]}
-                      >
-                        Techstacks :-{project.techstack}
-                      </Text>
+                      <Flex w={["100%", "90%", "90%"]}>
+                        <Text
+                          className="project-tech-stack"
+                          // w={["100%", "90%", "90%"]}
+                          m="auto"
+                          mt="10px"
+                          fontSize={["md", "md", "lg"]}
+                          color="#fff"
+                          mb={["0", "0", "20px"]}
+                        >
+                          Techstacks
+                        </Text>
+                        <Text
+                          className="project-tech-stack"
+                          // w={["100%", "90%", "90%"]}
+                          // m="auto"
+                          mt="10px"
+                          fontSize={["sm", "md", "md"]}
+                          color="#fff"
+                        >
+                          - {project.techstack}
+                        </Text>
+                      </Flex>
                       <Box
                         display="flex"
                         w={["100%", "80%", "100%"]}
@@ -145,6 +173,7 @@ function Projects() {
                         <Button
                           className="project-deployed-link"
                           as="a"
+                          // color={useColorModeValue('black','white')}
                           target="_blank"
                           href={project.livelink}
                           _hover={{ color: "#bb0606" }}
