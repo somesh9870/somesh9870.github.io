@@ -33,18 +33,18 @@ const Contact = () => {
       </Text>
       <Box
         display={["inline", "inline", "flex"]}
-        gap={"70px"}
-        border={"0px solid red"}
+        // gap={"70px"}
+        // border={"2px solid red"}
         className="contact"
         id="contact"
         w={["100%", "97%", "79%"]}
         fontSize={30}
         // color={"black"}
         m={"auto"}
-        mt={"5%"}
+        mt={{ base: 0, md: "5%", lg: "5%" }}
         h={"500px"}
       >
-        <Box w={["100%", "80%", "50%"]} margin="auto" mb={"30px"}>
+        <Box w={["100%", "80%", "50%"]} margin="auto">
           <Stack>
             <Text
               color={useColorModeValue("red", "red")}

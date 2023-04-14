@@ -72,7 +72,7 @@ function About() {
           many different languages.
         </Text> */}
 
-          <Text fontSize="xl" mx="auto" p={4}>
+          <Text fontSize="xl" mx="auto" p={[0, 4]}>
             Hi there! My name is Somesh Rawat and I am an Aspiring Full Stack
             Developer (MERN)
           </Text>
@@ -83,7 +83,7 @@ function About() {
             mt={6}
             mb={30}
             id="user-detail-intro"
-            p={4}
+            p={[0, 4]}
           >
             A Full Stack Web Developer with expertise in Coding, Data Structures
             & Algorithms, and Design. MERN and JavaScript programmer with

@@ -1,4 +1,4 @@
-import { Avatar, Badge, Box, Flex, Image, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import profileImage from "../Images/MainPicture.png";
 import Typewriter from "typewriter-effect";
@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <Flex
       id="home"
-      mt={10}
+      mt={[4, 10]}
       // border="1px solid red"
       direction={{ base: "column", md: "row" }}
       justify={"center"}
@@ -25,29 +25,31 @@ const Home = () => {
         // border="1px solid red"
       >
         <Box
-          // border="1px solid yellow"
+          // border={"1px solid yellow"}
           lineHeight={"60px"}
-          w={"100%"}
+          // w={"100%"}
+          w={{ base: "100%", md: "70%", lg: "70%" }}
           textAlign={{ base: "center", md: "center", lg: "start" }}
           p={"20px"}
         >
           <Text
-            fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
+            fontSize={{ base: "2xl", md: "4xl", lg: "4xl" }}
             fontWeight="bold"
-            mb={2}
+            mb={4}
+            // border={"1px solid red"}
           >
             Hello there, I'm
           </Text>
           <Text
             textColor={"#bb0606"}
-            fontSize={{ base: "4xl", md: "4xl", lg: "7xl" }}
+            fontSize={{ base: "4xl", md: "6xl", lg: "7xl" }}
             fontWeight="bold"
-            mb={4}
+            mb={5}
             id="user-detail-name"
           >
             Somesh Rawat
           </Text>
-          <Text fontSize={{ base: "xl", md: "3xl", lg: "4xl" }}>
+          <Text fontSize={{ base: "2xl", md: "4xl", lg: "4xl" }}>
             <Typewriter
               options={{
                 strings: [
@@ -66,7 +68,7 @@ const Home = () => {
           src={profileImage}
           objectFit={"contain"}
           // h={{ base: "5%", md: "60%", lg: "60%" }}
-          w={{ base: "70%", md: "30%", lg: "30%"}}
+          w={{ base: "60%", md: "35%", lg: "35%" }}
           _hover={{
             transition: "0.9s",
             transform: "scale(1.1)",

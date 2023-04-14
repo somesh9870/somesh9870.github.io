@@ -1,11 +1,4 @@
-import {
-  Box,
-  Image,
-  Text,
-  Button,
-  useColorModeValue,
-  Flex,
-} from "@chakra-ui/react";
+import { Box, Image, Text, Button, Flex } from "@chakra-ui/react";
 import { MdSlideshow } from "react-icons/md";
 import { BsGithub } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
@@ -13,6 +6,7 @@ import macMatch from "../Images/MacMatch.png";
 import styleIncore from "../Images/styleIncore.png";
 import internThrive from "../Images/internThrive.png";
 import phramEasy from "../Images/pharmeasy.png";
+import game from "../Assests/game.png";
 
 import React from "react";
 
@@ -20,13 +14,12 @@ function Projects() {
   let projectdata = [
     {
       name: "MacMatch",
-      // img: "https://user-images.githubusercontent.com/112812835/221432362-7a9776e1-1b0e-48c2-876f-af43ebb77be3.png",
       img: macMatch,
       type: "Group",
       desc: "It is an e-commerce website which provides various types of electronic products with online services.",
       techstack:
-        " React | Redux | JavaScript | Redux-Thunk | Chakra UI and Material UI",
-      livelink: "https://murky-pan.vercel.app/",
+        " React | Redux | JavaScript | Redux-Thunk | Chakra UI | Material UI",
+      livelink: "https://mac-match.vercel.app/",
       gitlink: "https://github.com/Namrata0407/murky-pan-2202",
     },
     {
@@ -39,15 +32,15 @@ function Projects() {
       gitlink: "https://github.com/rohithanss/Pharmeasy-Clone",
     },
     {
-      name: "Intern Thrive",
-      img: internThrive,
+      name: "Riddle Of Ruins",
+      img: game,
       type: "Group",
-      desc: "It is a platform connecting Companies and potential employees in various sectors.",
-      techstack: " HTML | CSS | JavaScript | Bootstrap",
-      livelink: "https://intern-thrive.netlify.app/",
-      gitlink: "https://github.com/Kavin0721/lumpy-pocket-4371",
+      desc: "A object finding game where one have to find hidden objects to earn points and move ahead to another level.",
+      techstack:
+        "React | Redux | TypeScript | Node.js | Mongoose | MongoDB Atlas | Tailwind",
+      livelink: "https://marspharmacy.netlify.app/",
+      gitlink: "https://github.com/rohithanss/Pharmeasy-Clone",
     },
-
     {
       name: "STYLE-INCORE",
       img: styleIncore,
@@ -57,15 +50,16 @@ function Projects() {
       livelink: "https://style-incore-express.netlify.app/",
       gitlink: "https://github.com/somesh9870/express",
     },
-    // {
-    //   name: "PharmEasy",
-    //   img: "https://rohithanss.github.io/pharmeasy.png",
-    //   type: "Group",
-    //   desc: "PharmEasy is an online pharmacy store that allows customers to order prescription and over-the-counter medications and have them delivered to their doorstep. In addition to selling medications, PharmEasy also offers a range of healthcare services, including lab test bookings, doctor consultations, and online healthcare products.",
-    //   techstack: " HTML, CSS, JavaScript, and JSON server",
-    //   livelink: "https://marspharmacy.netlify.app/",
-    //   gitlink: "https://github.com/rohithanss/Pharmeasy-Clone",
-    // },
+    {
+      name: "Intern Thrive",
+      img: internThrive,
+      type: "Group",
+      desc: "It is a platform connecting Companies and potential employees in various sectors.",
+      techstack: " HTML | CSS | JavaScript | Bootstrap",
+      livelink: "https://intern-thrive.netlify.app/",
+      gitlink: "https://github.com/Kavin0721/lumpy-pocket-4371",
+    },
+
   ];
 
   return (
@@ -118,7 +112,8 @@ function Projects() {
                     />
                     <Box w={["100%", "97%", "39%"]} m="auto" p={"30px"}>
                       <Text
-                        fontSize={["2xl", "3xl", "4xl"]}
+                        fontSize={["3xl", "3xl", "4xl"]}
+                        fontWeight={700}
                         className="project-title"
                         // color="#fff"
                         color={"#bb0606"}
@@ -135,14 +130,18 @@ function Projects() {
                         textAlign={"left"}
                         w={["100%", "90%", "90%"]}
                         m="auto"
-                        fontSize={["sm", "md", "md"]}
+                        fontSize={["lg", "md", "md"]}
                         color="#fff"
-                        mb="30px"
+                        mb="20px"
                       >
                         {project.desc}
                       </Text>
-                      <Flex w={["100%", "90%", "90%"]}>
-                        <Text
+                      <Flex
+                        w={["100%", "90%", "90%"]}
+                        mb={"20px"}
+                        justify={"center"}
+                      >
+                        {/* <Text
                           className="project-tech-stack"
                           // w={["100%", "90%", "90%"]}
                           m="auto"
@@ -152,16 +151,16 @@ function Projects() {
                           mb={["0", "0", "20px"]}
                         >
                           Techstacks
-                        </Text>
+                        </Text> */}
                         <Text
                           className="project-tech-stack"
                           // w={["100%", "90%", "90%"]}
                           // m="auto"
                           mt="10px"
-                          fontSize={["sm", "md", "md"]}
+                          fontSize={["lg", "md", "md"]}
                           color="#fff"
                         >
-                          - {project.techstack}
+                          {project.techstack}
                         </Text>
                       </Flex>
                       <Box

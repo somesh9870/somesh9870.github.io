@@ -14,6 +14,15 @@ import {
 import SkillCard from "./SkillCard";
 // import SkillCard from "./SkillCard";
 // import { skillsData } from "../../constants/skillsData";
+import express from "../Assests/Express.png";
+import git from "../Assests/git.png";
+import node from "../Assests/Node.js.png";
+import REACT from "../Assests/React.png";
+import MUI from "../Assests/MaterialUi.png";
+import MONGOOSE from "../Assests/mongoose.png";
+import REDUX from "../Assests/Redux.png";
+import css from "../Assests/CSS.png";
+
 export const skillsData = [
   {
     icon: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
@@ -26,7 +35,8 @@ export const skillsData = [
     category: "frontend",
   },
   {
-    icon: "https://alih6051.github.io/static/media/css.39769a8bd378bf410d6b381a8d88fa35.svg",
+    // icon: "https://alih6051.github.io/static/media/css.39769a8bd378bf410d6b381a8d88fa35.svg",
+    icon: css,
     name: "CSS",
     category: "frontend",
   },
@@ -42,7 +52,8 @@ export const skillsData = [
     category: "frontend",
   },
   {
-    icon: "https://alih6051.github.io/static/media/react.4e0c97009b885bfa75c5412262a46f5f.svg",
+    // icon: "https://alih6051.github.io/static/media/react.4e0c97009b885bfa75c5412262a46f5f.svg",
+    icon: REACT,
     name: "React",
     category: "frontend",
   },
@@ -52,7 +63,8 @@ export const skillsData = [
     category: "frontend",
   },
   {
-    icon: "https://alih6051.github.io/static/media/redux.7fe607aacc31f6e6199e70f16aae407e.svg",
+    // icon: "https://alih6051.github.io/static/media/redux.7fe607aacc31f6e6199e70f16aae407e.svg",
+    icon: REDUX,
     name: "Redux",
     category: "frontend",
   },
@@ -62,17 +74,20 @@ export const skillsData = [
     category: "frontend",
   },
   {
-    icon: "https://alih6051.github.io/static/media/mui.87264df237ee700ba78bb58ff701a6d3.svg",
+    // icon: "https://alih6051.github.io/static/media/mui.87264df237ee700ba78bb58ff701a6d3.svg",
+    icon: MUI,
     name: "Material UI",
     category: "frontend",
   },
   {
-    icon: "https://alih6051.github.io/static/media/node.10c9e2aa0ca7edf36fceae25fec038a1.svg",
+    // icon: "https://alih6051.github.io/static/media/node.10c9e2aa0ca7edf36fceae25fec038a1.svg",
+    icon: node,
     name: "Node JS",
     category: "backend",
   },
   {
-    icon: "https://alih6051.github.io/static/media/express.4925c0127df8857c18b38329795ce88f.svg",
+    // icon: "https://alih6051.github.io/static/media/express.4925c0127df8857c18b38329795ce88f.svg",
+    icon: express,
     name: "Express",
     category: "backend",
   },
@@ -82,12 +97,14 @@ export const skillsData = [
     category: "backend",
   },
   {
-    icon: "https://alih6051.github.io/static/media/mongoose.51275a001caf5e6e30d4.png",
+    // icon: "https://alih6051.github.io/static/media/mongoose.51275a001caf5e6e30d4.png",
+    icon: MONGOOSE,
     name: "Mongoose",
     category: "backend",
   },
   {
-    icon: "https://alih6051.github.io/static/media/git.c08353563539c6459b353f29d8dd7bf2.svg",
+    // icon: "https://alih6051.github.io/static/media/git.c08353563539c6459b353f29d8dd7bf2.svg",
+    icon: git,
     name: "Git",
     category: "frontend",
   },

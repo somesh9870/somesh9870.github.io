@@ -134,7 +134,21 @@ export default function Navbar() {
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
         <Button display={{ base: "flex", md: "none" }} background="#bb0606">
-          Resume
+          <Link
+            display={"flex"}
+            // justifyContent="space-between"
+            gap="15px"
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1tS5hoRo2c2GgTCuYuwhj7IPUvojTTQEj/view?usp=share_link"
+              )
+            }
+            href={SomeshRawat}
+            target={"_blank"}
+            download
+          >
+            Resume
+          </Link>
         </Button>
       </Collapse>
     </Box>
