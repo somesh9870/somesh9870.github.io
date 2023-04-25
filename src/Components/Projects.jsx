@@ -38,8 +38,8 @@ function Projects() {
       desc: "A object finding game where one have to find hidden objects to earn points and move ahead to another level.",
       techstack:
         "React | Redux | TypeScript | Node.js | Mongoose | MongoDB Atlas | Tailwind",
-      livelink: "https://marspharmacy.netlify.app/",
-      gitlink: "https://github.com/rohithanss/Pharmeasy-Clone",
+      livelink: "https://game-geniuses.vercel.app/",
+      gitlink: "https://github.com/somesh9870/Game-Geniuses",
     },
     {
       name: "STYLE-INCORE",
