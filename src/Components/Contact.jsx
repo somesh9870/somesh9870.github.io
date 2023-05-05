@@ -114,7 +114,7 @@ const Contact = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Github
+                      somesh9870
                     </a>
                   </Text>
                 </Flex>

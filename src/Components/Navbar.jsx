@@ -25,7 +25,7 @@ import {
 } from "@chakra-ui/icons";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { useEffect } from "react";
-import SomeshRawat from "../Resume/fw21_0865-Somesh-Rawat-Resume.pdf";
+import SomeshRawat from "../Resume/Somesh-Rawat-Resume.pdf";
 import NameLogo from "../Images/Logo.png";
 
 export default function Navbar() {
@@ -157,7 +157,7 @@ export default function Navbar() {
 
 const DesktopNav = () => {
   const linkColor = useColorModeValue("gray.600", "gray.200");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
+  // const linkHoverColor = useColorModeValue("gray.800", "white");
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (

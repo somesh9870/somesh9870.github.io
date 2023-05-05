@@ -19,8 +19,18 @@ function Projects() {
       desc: "It is an e-commerce website which provides various types of electronic products with online services.",
       techstack:
         " React | Redux | JavaScript | Redux-Thunk | Chakra UI | Material UI",
-      livelink: "https://mac-match.vercel.app/",
-      gitlink: "https://github.com/Namrata0407/murky-pan-2202",
+      livelink: "https://macmatch.vercel.app/",
+      gitlink: "https://github.com/somesh9870/MacMatch",
+    },
+    {
+      name: "HealthyWay",
+      img: macMatch,
+      type: "Group",
+      desc: "It is an e-commerce website which provides various types of electronic products with online services.",
+      techstack:
+        " React | Redux | JavaScript | Redux-Thunk | Chakra UI | Material UI",
+      livelink: "https://healty-way.vercel.app/",
+      gitlink: "https://github.com/somesh9870/Healthy-way",
     },
     {
       name: "PharmEasy",
@@ -29,7 +39,7 @@ function Projects() {
       desc: "PharmEasy is an online pharmacy store that allows customers to order prescription and over-the-counter medications and have them delivered to their doorstep. ",
       techstack: " HTML | CSS | JavaScript | and JSON server",
       livelink: "https://marspharmacy.netlify.app/",
-      gitlink: "https://github.com/rohithanss/Pharmeasy-Clone",
+      gitlink: "https://github.com/somesh9870/Pharmeasy-Clone",
     },
     {
       name: "Riddle Of Ruins",
@@ -57,9 +67,8 @@ function Projects() {
       desc: "It is a platform connecting Companies and potential employees in various sectors.",
       techstack: " HTML | CSS | JavaScript | Bootstrap",
       livelink: "https://intern-thrive.netlify.app/",
-      gitlink: "https://github.com/Kavin0721/lumpy-pocket-4371",
+      gitlink: "https://github.com/somesh9870/Intern-Thirve",
     },
-
   ];
 
   return (

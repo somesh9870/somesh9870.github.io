@@ -11,9 +11,13 @@ import {
 import React from "react";
 import { FiDownload } from "react-icons/fi";
 import { BsGithub } from "react-icons/bs";
-import SomeshRawat from "../Resume/fw21_0865-Somesh-Rawat-Resume.pdf";
+import SomeshRawat from "../Resume/Somesh-Rawat-Resume.pdf";
 
 function About() {
+  const handleClick = () => {
+    window.location.href = "https://github.com/somesh9870";
+  };
+
   return (
     <Grid
       // border="1px solid red"
@@ -118,7 +122,7 @@ function About() {
               </Button>
             </Flex>
             <Flex>
-              <Button gap={4} px={10}>
+              <Button gap={4} px={10} onClick={handleClick}>
                 {" "}
                 <BsGithub /> <span>Github</span>
               </Button>
