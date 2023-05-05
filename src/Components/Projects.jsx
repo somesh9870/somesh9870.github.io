@@ -26,9 +26,9 @@ function Projects() {
       name: "HealthyWay",
       img: macMatch,
       type: "Group",
-      desc: "It is an e-commerce website which provides various types of electronic products with online services.",
+      desc: "Healthyway is a website that functions as a nutrition tracking tool to help users reach their health goals by monitoring their daily caloric intake and other relevant factors.",
       techstack:
-        " React | Redux | JavaScript | Redux-Thunk | Chakra UI | Material UI",
+        " React | Redux | Node.js | Express.js | MOngoDB Atlas | Chakra UI | Material UI",
       livelink: "https://healty-way.vercel.app/",
       gitlink: "https://github.com/somesh9870/Healthy-way",
     },
