@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.1f902994.css",
-    "main.js": "/static/js/main.b9e88e68.js",
+    "main.js": "/static/js/main.f86e1f67.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/game.png": "/static/media/game.7ca72626dc6397cbd4ed.png",
     "static/media/MacMatch.png": "/static/media/MacMatch.e450b7a0be10d48423a7.png",
     "static/media/styleIncore.png": "/static/media/styleIncore.f8f0087fed856405d4cf.png",
     "static/media/internThrive.png": "/static/media/internThrive.ed7bb3b357955bfda9de.png",
     "static/media/pharmeasy.png": "/static/media/pharmeasy.566382c3e9110d31d028.png",
-    "static/media/fw21_0865-Somesh-Rawat-Resume.pdf": "/static/media/fw21_0865-Somesh-Rawat-Resume.bea9badfe0b1e7263394.pdf",
     "static/media/MaterialUi.png": "/static/media/MaterialUi.5955eca0663eaeb9b8d6.png",
+    "static/media/Somesh-Rawat-Resume.pdf": "/static/media/Somesh-Rawat-Resume.029c0f0afc47649b5562.pdf",
     "static/media/MainPicture.png": "/static/media/MainPicture.a842b7cdc56266449e2d.png",
     "static/media/mongoose.png": "/static/media/mongoose.998152e4bc5fdd366c2c.png",
     "static/media/Redux.png": "/static/media/Redux.5de70b7bc0d2556a0958.png",
@@ -20,11 +20,11 @@
     "static/media/Node.js.png": "/static/media/Node.js.478c590a266bed215577.png",
     "index.html": "/index.html",
     "main.1f902994.css.map": "/static/css/main.1f902994.css.map",
-    "main.b9e88e68.js.map": "/static/js/main.b9e88e68.js.map",
+    "main.f86e1f67.js.map": "/static/js/main.f86e1f67.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f902994.css",
-    "static/js/main.b9e88e68.js"
+    "static/js/main.f86e1f67.js"
   ]
 }
