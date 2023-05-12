@@ -22,15 +22,22 @@ import MUI from "../Assests/MaterialUi.png";
 import MONGOOSE from "../Assests/mongoose.png";
 import REDUX from "../Assests/Redux.png";
 import css from "../Assests/CSS.png";
+import js from "../Assests/js.png";
+import github from "../Assests/github.png";
+import html from "../Assests/html.png";
+import mongodb from "../Assests/mongodb.png";
+import vscode from '../Assests/vscode.png';
 
 export const skillsData = [
   {
-    icon: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    // icon: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    icon: js,
     name: "Javascript",
     category: "frontend",
   },
   {
-    icon: "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png",
+    // icon: "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png",
+    icon: html,
     name: "HTML",
     category: "frontend",
   },
@@ -92,7 +99,8 @@ export const skillsData = [
     category: "backend",
   },
   {
-    icon: "https://alih6051.github.io/static/media/mongodb.6835c61a518a732eb8318d43dfe8f700.svg",
+    // icon: "https://alih6051.github.io/static/media/mongodb.6835c61a518a732eb8318d43dfe8f700.svg",
+    icon: mongodb,
     name: "MongoDB",
     category: "backend",
   },
@@ -114,7 +122,8 @@ export const skillsData = [
     category: "tool",
   },
   {
-    icon: "https://code.visualstudio.com/assets/images/code-stable.png",
+    // icon: "https://code.visualstudio.com/assets/images/code-stable.png",
+    icon: vscode,
     name: "VS Code",
     category: "tool",
   },
@@ -124,7 +133,8 @@ export const skillsData = [
     category: "tool",
   },
   {
-    icon: "https://cdn-icons-png.flaticon.com/512/2175/2175377.png",
+    // icon: "https://cdn-icons-png.flaticon.com/512/2175/2175377.png",
+    icon: github,
     name: "Github",
     category: "tool",
   },

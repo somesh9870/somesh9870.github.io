@@ -57,6 +57,7 @@ export default function Navbar() {
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
+        gap={6}
       >
         <Flex
           flex={{ base: 1, md: "auto" }}
@@ -77,6 +78,8 @@ export default function Navbar() {
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
+            // border="1px solid red"
+            display={{ base: "flex", md: "none", lg: "flex" }}
           >
             <Image
               borderRadius="5px"
@@ -209,6 +212,7 @@ const DesktopNav = () => {
 const DesktopSubNav = ({ label, href, subLabel }) => {
   return (
     <Link
+      // border="5px solid yellow"
       href={href}
       role={"group"}
       display={"block"}

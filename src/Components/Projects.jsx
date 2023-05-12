@@ -7,6 +7,7 @@ import styleIncore from "../Images/styleIncore.png";
 import internThrive from "../Images/internThrive.png";
 import phramEasy from "../Images/pharmeasy.png";
 import game from "../Assests/game.png";
+import healthyway from "../Images/HealthyWay.png";
 
 import React from "react";
 
@@ -24,11 +25,11 @@ function Projects() {
     },
     {
       name: "HealthyWay",
-      img: macMatch,
+      img: healthyway,
       type: "Group",
       desc: "Healthyway is a website that functions as a nutrition tracking tool to help users reach their health goals by monitoring their daily caloric intake and other relevant factors.",
       techstack:
-        " React | Redux | Node.js | Express.js | MOngoDB Atlas | Chakra UI | Material UI",
+        " React | Redux | JavaScript | Node.js | Express.js | Mongoose | MOngoDB Atlas | Chakra UI",
       livelink: "https://healty-way.vercel.app/",
       gitlink: "https://github.com/somesh9870/Healthy-way",
     },
@@ -37,7 +38,7 @@ function Projects() {
       img: phramEasy,
       type: "Group",
       desc: "PharmEasy is an online pharmacy store that allows customers to order prescription and over-the-counter medications and have them delivered to their doorstep. ",
-      techstack: " HTML | CSS | JavaScript | and JSON server",
+      techstack: " HTML | CSS | JavaScript | JSON server",
       livelink: "https://marspharmacy.netlify.app/",
       gitlink: "https://github.com/somesh9870/Pharmeasy-Clone",
     },
@@ -47,7 +48,7 @@ function Projects() {
       type: "Group",
       desc: "A object finding game where one have to find hidden objects to earn points and move ahead to another level.",
       techstack:
-        "React | Redux | TypeScript | Node.js | Mongoose | MongoDB Atlas | Tailwind",
+        "React | Redux | TypeScript | Node.js | Express.js | Mongoose | MongoDB Atlas | Tailwind CSS",
       livelink: "https://game-geniuses.vercel.app/",
       gitlink: "https://github.com/somesh9870/Game-Geniuses",
     },
@@ -108,20 +109,20 @@ function Projects() {
               return (
                 <Box className="project-card" bg={"#0c1014"}>
                   <Box
-                    display={["inline", "inline", "flex"]}
+                    display={["inline", "inline", "inline", "flex"]}
                     rowGap="60px"
                     justifyContent="space-between"
                     border={"3px solid #1877f2"}
                   >
                     <Image
-                      w={["100%", "97%", "60%"]}
+                      w={["100%", "97%", "97%", "60%"]}
                       m="auto"
                       src={project.img}
                       alt="project-thumbnail"
                     />
-                    <Box w={["100%", "97%", "39%"]} m="auto" p={"30px"}>
+                    <Box w={["100%", "97%", "97%", "39%"]} m="auto" p={"30px"}>
                       <Text
-                        fontSize={["3xl", "3xl", "4xl"]}
+                        fontSize={["3xl", "3xl", "3xl", "4xl"]}
                         fontWeight={700}
                         className="project-title"
                         // color="#fff"
