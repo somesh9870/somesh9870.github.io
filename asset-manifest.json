@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1f902994.css",
-    "main.js": "/static/js/main.6782dd5c.js",
+    "main.js": "/static/js/main.ad7bf148.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/game.png": "/static/media/game.7ca72626dc6397cbd4ed.png",
     "static/media/MacMatch.png": "/static/media/MacMatch.e450b7a0be10d48423a7.png",
@@ -12,20 +12,25 @@
     "static/media/Somesh-Rawat-Resume.pdf": "/static/media/Somesh-Rawat-Resume.029c0f0afc47649b5562.pdf",
     "static/media/MainPicture.png": "/static/media/MainPicture.a842b7cdc56266449e2d.png",
     "static/media/HealthyWay.png": "/static/media/HealthyWay.e02fdbe94e5613a5a874.png",
+    "static/media/vscode.png": "/static/media/vscode.19edc3fbac1c451f289d.png",
+    "static/media/mongodb.png": "/static/media/mongodb.b43497303276e8217b38.png",
     "static/media/mongoose.png": "/static/media/mongoose.998152e4bc5fdd366c2c.png",
     "static/media/Redux.png": "/static/media/Redux.5de70b7bc0d2556a0958.png",
     "static/media/CSS.png": "/static/media/CSS.9f33c557b92e4e2e1cc8.png",
     "static/media/Logo.png": "/static/media/Logo.949d9a9bfd116dd16542.png",
     "static/media/React.png": "/static/media/React.20adfb35ae6a6e5817bf.png",
+    "static/media/github.png": "/static/media/github.69ffd9cd5a846c976177.png",
     "static/media/Express.png": "/static/media/Express.39a0f4c3d981885c64f8.png",
     "static/media/Node.js.png": "/static/media/Node.js.478c590a266bed215577.png",
+    "static/media/html.png": "/static/media/html.ff3cf75e3b7cbb4ea77c.png",
+    "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/index.html",
     "main.1f902994.css.map": "/static/css/main.1f902994.css.map",
-    "main.6782dd5c.js.map": "/static/js/main.6782dd5c.js.map",
+    "main.ad7bf148.js.map": "/static/js/main.ad7bf148.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f902994.css",
-    "static/js/main.6782dd5c.js"
+    "static/js/main.ad7bf148.js"
   ]
 }
