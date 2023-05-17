@@ -140,7 +140,7 @@ function Projects() {
                         textAlign={"left"}
                         w={["100%", "90%", "90%"]}
                         m="auto"
-                        fontSize={["lg", "md", "md"]}
+                        fontSize={["sm", "md", "md"]}
                         color="#fff"
                         mb="20px"
                       >
@@ -167,7 +167,7 @@ function Projects() {
                           // w={["100%", "90%", "90%"]}
                           // m="auto"
                           mt="10px"
-                          fontSize={["lg", "md", "md"]}
+                          fontSize={["sm", "md", "md"]}
                           color="#fff"
                         >
                           {project.techstack}

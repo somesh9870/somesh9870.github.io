@@ -18,7 +18,8 @@ const SkillCard = ({ icon, name }) => {
           className="skills-card-img"
           src={icon}
           // w="100%"
-          w={{ base: "80%", sm: "50%", md: "80%", lg: "100%", xl: "100%" }}
+          // w={{ base: "80%", sm: "50%", md: "70%", lg: "100%", xl: "100%" }}
+          w={["80%", "50%", "70%", "100%"]}
         />
         <Text className="skills-card-name" fontSize="sm">
           {name}

@@ -84,6 +84,7 @@ export default function Navbar() {
             <Image
               borderRadius="5px"
               width={{ base: "100%", md: "220px", lg: "220px" }}
+              height={{ base: "35px", lg: "50px" }}
               src={NameLogo}
             />
           </Text>

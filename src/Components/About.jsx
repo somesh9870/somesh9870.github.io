@@ -31,7 +31,7 @@ function About() {
     >
       <Heading
         fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-        mb={"40px"}
+        mb={"60px"}
         textAlign={"center"}
       >
         <Text
@@ -52,11 +52,15 @@ function About() {
           About Me
         </Text>
       </Heading>
-      <Flex direction={{ base: "column", md: "column", lg: "row" }} px={20}>
+      <Flex
+        direction={{ base: "column", md: "column", lg: "row" }}
+        px={{ base: 5, md: 20, lg: 20 }}
+        gap={[0,0,0,8]}
+      >
         <Box marginBottom={{ base: "30px" }}>
           <Image
             margin={"auto"}
-            width={{ base: "100%", md: "60%", lg: "60%" }}
+            width={{ base: "100%", md: "60%", lg: "100%" }}
             height={{ base: "200px", md: "auto" }}
             borderRadius={{ base: "10%", md: "10%" }}
             objectFit="contain"
@@ -64,7 +68,7 @@ function About() {
             alt="#"
           />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"}  w={"100%"}>
           {/* <Text
           fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}
           textAlign={"center"}
@@ -76,12 +80,12 @@ function About() {
           many different languages.
         </Text> */}
 
-          <Text fontSize="xl" mx="auto" p={[0, 4]}>
+          <Text fontSize={["sm", "lg", "xl"]} mx="auto" p={[0, 4]}>
             Hi there! My name is Somesh Rawat and I am an Aspiring Full Stack
             Developer (MERN)
           </Text>
           <Text
-            fontSize="xl"
+            fontSize={["sm", "lg", "xl"]}
             maxW="3xl"
             mx="auto"
             mt={6}

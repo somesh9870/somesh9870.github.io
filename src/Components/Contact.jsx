@@ -32,8 +32,8 @@ const Contact = () => {
         Contact Me
       </Text>
       <Box
-        display={["inline", "inline", "flex"]}
-        // gap={"70px"}
+        display={["inline", "inline", "inline", "flex"]}
+        // gap={10}
         // border={"2px solid red"}
         className="contact"
         id="contact"
@@ -187,8 +187,8 @@ const Contact = () => {
         >
           <Box
             w={["90%", "70%", "90%"]}
-            mt={["100px", "100px", "0px"]}
             margin="auto"
+            mt={["50px", "50px", "50px", "0px"]}
             // marginTop={{ base: "0px", md: "0" }}
             // h={"400px"}
             // ml={["70px", "100px", "-5%"]}
