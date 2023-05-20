@@ -8,11 +8,22 @@ import internThrive from "../Images/internThrive.png";
 import phramEasy from "../Images/pharmeasy.png";
 import game from "../Assests/game.png";
 import healthyway from "../Images/HealthyWay.png";
+import versatile from "../Images/versatile.png";
 
 import React from "react";
 
 function Projects() {
   let projectdata = [
+    {
+      name: "Edith",
+      img: versatile,
+      type: "Group",
+      desc: "Edith is a real-life student course platform for Student of Versatile Technologies that offers a variety of functionalities, including the ability to take tests, set up games for students, write blogs, take note of student fees, and much more. note;-* use email:- somesh@gmail.com pass:- somesh for login and admin login",
+      techstack:
+        " React | Redux | Chakra UI | Node.js | Mongoose | MongoDB Atlas | Express | JavaScript",
+      livelink: "https://versatile-backend.vercel.app/",
+      gitlink: "https://github.com/somesh9870/Versatile-Project",
+    },
     {
       name: "MacMatch",
       img: macMatch,
@@ -58,7 +69,7 @@ function Projects() {
       type: "Individual",
       desc: "It is a fashion-forward apparel brand and style community  which provides various types of clothing products with online services.",
       techstack: "React | JavaScript | Chakra UI ",
-      livelink: "https://style-incore-express.netlify.app/",
+      livelink: "https://express-rouge-seven.vercel.app/",
       gitlink: "https://github.com/somesh9870/express",
     },
     {

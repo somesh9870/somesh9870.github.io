@@ -128,7 +128,7 @@ function About() {
             <Flex>
               <Button gap={4} px={10} onClick={handleClick}>
                 {" "}
-                <BsGithub /> <span>Github</span>
+                <BsGithub /> <span>somesh9870</span>
               </Button>
             </Flex>
           </Flex>
