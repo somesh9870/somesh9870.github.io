@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.1f902994.css",
-    "main.js": "/static/js/main.9b04a60d.js",
+    "main.js": "/static/js/main.e8240a98.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/game.png": "/static/media/game.7ca72626dc6397cbd4ed.png",
     "static/media/MacMatch.png": "/static/media/MacMatch.e450b7a0be10d48423a7.png",
     "static/media/styleIncore.png": "/static/media/styleIncore.f8f0087fed856405d4cf.png",
     "static/media/internThrive.png": "/static/media/internThrive.ed7bb3b357955bfda9de.png",
+    "static/media/versatile.png": "/static/media/versatile.7ee0e9ef822762d72dc3.png",
     "static/media/pharmeasy.png": "/static/media/pharmeasy.566382c3e9110d31d028.png",
     "static/media/MaterialUi.png": "/static/media/MaterialUi.5955eca0663eaeb9b8d6.png",
     "static/media/Somesh-Rawat-Resume.pdf": "/static/media/Somesh-Rawat-Resume.029c0f0afc47649b5562.pdf",
@@ -26,11 +27,11 @@
     "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/index.html",
     "main.1f902994.css.map": "/static/css/main.1f902994.css.map",
-    "main.9b04a60d.js.map": "/static/js/main.9b04a60d.js.map",
+    "main.e8240a98.js.map": "/static/js/main.e8240a98.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f902994.css",
-    "static/js/main.9b04a60d.js"
+    "static/js/main.e8240a98.js"
   ]
 }
