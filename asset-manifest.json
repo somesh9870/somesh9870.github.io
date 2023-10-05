@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1f902994.css",
-    "main.js": "/static/js/main.5f107415.js",
+    "main.js": "/static/js/main.e5bed2c6.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/game.png": "/static/media/game.7ca72626dc6397cbd4ed.png",
     "static/media/MacMatch.png": "/static/media/MacMatch.e450b7a0be10d48423a7.png",
@@ -10,9 +10,9 @@
     "static/media/versatile.png": "/static/media/versatile.7ee0e9ef822762d72dc3.png",
     "static/media/pharmeasy.png": "/static/media/pharmeasy.566382c3e9110d31d028.png",
     "static/media/MaterialUi.png": "/static/media/MaterialUi.5955eca0663eaeb9b8d6.png",
-    "static/media/Somesh-Rawat-Resume.pdf": "/static/media/Somesh-Rawat-Resume.029c0f0afc47649b5562.pdf",
     "static/media/MainPicture.png": "/static/media/MainPicture.a842b7cdc56266449e2d.png",
     "static/media/HealthyWay.png": "/static/media/HealthyWay.e02fdbe94e5613a5a874.png",
+    "static/media/Somesh-Rawat-Resume.pdf": "/static/media/Somesh-Rawat-Resume.5228b74adf5268ab837f.pdf",
     "static/media/vscode.png": "/static/media/vscode.19edc3fbac1c451f289d.png",
     "static/media/mongodb.png": "/static/media/mongodb.b43497303276e8217b38.png",
     "static/media/mongoose.png": "/static/media/mongoose.998152e4bc5fdd366c2c.png",
@@ -27,11 +27,11 @@
     "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/index.html",
     "main.1f902994.css.map": "/static/css/main.1f902994.css.map",
-    "main.5f107415.js.map": "/static/js/main.5f107415.js.map",
+    "main.e5bed2c6.js.map": "/static/js/main.e5bed2c6.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f902994.css",
-    "static/js/main.5f107415.js"
+    "static/js/main.e5bed2c6.js"
   ]
 }
