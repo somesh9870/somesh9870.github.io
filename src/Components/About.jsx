@@ -55,7 +55,7 @@ function About() {
       <Flex
         direction={{ base: "column", md: "column", lg: "row" }}
         px={{ base: 5, md: 20, lg: 20 }}
-        gap={[0,0,0,8]}
+        gap={[0, 0, 0, 8]}
       >
         <Box marginBottom={{ base: "30px" }}>
           <Image
@@ -68,18 +68,7 @@ function About() {
             alt="#"
           />
         </Box>
-        <Box textAlign={"start"}  w={"100%"}>
-          {/* <Text
-          fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}
-          textAlign={"center"}
-          mb={10}
-        >
-          Hi, I'm Somesh Rawat. I am a Full Stack Web Developer. I have
-          been working as a Full Stack Web Developer since 2020. I have
-          worked with many different technologies and I have also worked with
-          many different languages.
-        </Text> */}
-
+        <Box w={"100%"}>
           <Text fontSize={["sm", "lg", "xl"]} mx="auto" p={[0, 4]}>
             Hi there! My name is Somesh Rawat and I am an Aspiring Full Stack
             Developer (MERN)
@@ -91,6 +80,7 @@ function About() {
             mt={6}
             mb={30}
             id="user-detail-intro"
+            textAlign={"start"}
             p={[0, 4]}
           >
             A Full Stack Web Developer with expertise in Coding, Data Structures

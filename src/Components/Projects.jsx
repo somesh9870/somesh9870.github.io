@@ -15,16 +15,6 @@ import React from "react";
 function Projects() {
   let projectdata = [
     {
-      name: "Edith",
-      img: versatile,
-      type: "Group",
-      desc: "Edith is a real-life student course platform for Student of Versatile Technologies that offers a variety of functionalities, including the ability to take tests, set up games for students, write blogs, take note of student fees, and much more. note;-* use email:- somesh@gmail.com pass:- somesh for login and admin login",
-      techstack:
-        " React | Redux | Chakra UI | Node.js | Mongoose | MongoDB Atlas | Express | JavaScript",
-      livelink: "https://versatile-backend.vercel.app/",
-      gitlink: "https://github.com/somesh9870/Versatile-Project",
-    },
-    {
       name: "MacMatch",
       img: macMatch,
       type: "Group",
@@ -80,6 +70,16 @@ function Projects() {
       techstack: " HTML | CSS | JavaScript | Bootstrap",
       livelink: "https://intern-thrive.netlify.app/",
       gitlink: "https://github.com/somesh9870/Intern-Thirve",
+    },
+    {
+      name: "Edith",
+      img: versatile,
+      type: "Group",
+      desc: "Edith is a real-life student course platform for Student of Versatile Technologies that offers a variety of functionalities, including the ability to take tests, set up games for students, write blogs, take note of student fees, and much more. note;-* use email:- somesh@gmail.com pass:- somesh for login and admin login",
+      techstack:
+        " React | Redux | Chakra UI | Node.js | Mongoose | MongoDB Atlas | Express | JavaScript",
+      livelink: "https://versatile-backend.vercel.app/",
+      gitlink: "https://github.com/somesh9870/Versatile-Project",
     },
   ];
 
