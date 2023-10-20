@@ -54,7 +54,7 @@ function Projects() {
       gitlink: "https://github.com/somesh9870/Game-Geniuses",
     },
     {
-      name: "STYLE-INCORE",
+      name: "Style Incore",
       img: styleIncore,
       type: "Individual",
       desc: "It is a fashion-forward apparel brand and style community  which provides various types of clothing products with online services.",
