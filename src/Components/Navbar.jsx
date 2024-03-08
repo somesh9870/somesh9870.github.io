@@ -119,7 +119,7 @@ export default function Navbar() {
               id="resume-link-1"
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1tS5hoRo2c2GgTCuYuwhj7IPUvojTTQEj/view?usp=share_link"
+                  "https://drive.google.com/file/d/1wVBjsYy4p5JJqz-MATwtaw8IC_W898hI/view?usp=sharing"
                 )
               }
               href={SomeshRawat}
@@ -144,7 +144,7 @@ export default function Navbar() {
             gap="15px"
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1tS5hoRo2c2GgTCuYuwhj7IPUvojTTQEj/view?usp=share_link"
+                "https://drive.google.com/file/d/1wVBjsYy4p5JJqz-MATwtaw8IC_W898hI/view?usp=sharing"
               )
             }
             href={SomeshRawat}

@@ -104,7 +104,7 @@ function About() {
                   gap="15px"
                   onClick={() =>
                     window.open(
-                      "https://drive.google.com/file/d/1tS5hoRo2c2GgTCuYuwhj7IPUvojTTQEj/view?usp=share_link"
+                      "https://drive.google.com/file/d/1wVBjsYy4p5JJqz-MATwtaw8IC_W898hI/view?usp=sharing"
                     )
                   }
                   href={SomeshRawat}
