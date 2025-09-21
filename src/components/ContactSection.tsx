@@ -211,15 +211,15 @@ const ContactSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="p-6 rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800"
+                className="p-6 rounded-lg bg-slate-100 dark:bg-slate-900/20 border border-slate-300 dark:border-slate-800"
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                  <span className="font-medium text-green-800 dark:text-green-200">
+                  <div className="w-3 h-3 bg-blue-600 rounded-full animate-pulse" />
+                  <span className="font-medium text-slate-900 dark:text-slate-100">
                     Available for Projects
                   </span>
                 </div>
-                <p className="text-sm text-green-700 dark:text-green-300">
+                <p className="text-sm text-slate-900 dark:text-slate-200">
                   I&apos;m currently accepting new projects and collaborations.
                   Let&apos;s discuss how we can work together!
                 </p>
@@ -236,7 +236,10 @@ const ContactSection = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium">
+                    <label
+                      htmlFor="name"
+                      className="text-sm font-medium text-slate-900 dark:text-slate-200"
+                    >
                       Name *
                     </label>
                     <input
@@ -246,12 +249,15 @@ const ContactSection = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200"
+                      className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200"
                       placeholder="Your name"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium">
+                    <label
+                      htmlFor="email"
+                      className="text-sm font-medium text-slate-900 dark:text-slate-200"
+                    >
                       Email *
                     </label>
                     <input
@@ -261,14 +267,17 @@ const ContactSection = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200"
+                      className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200"
                       placeholder="your.email@example.com"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="subject" className="text-sm font-medium">
+                  <label
+                    htmlFor="subject"
+                    className="text-sm font-medium text-slate-900 dark:text-slate-200"
+                  >
                     Subject *
                   </label>
                   <input
@@ -278,13 +287,16 @@ const ContactSection = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200"
                     placeholder="What's this about?"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium">
+                  <label
+                    htmlFor="message"
+                    className="text-sm font-medium text-slate-900 dark:text-slate-200"
+                  >
                     Message *
                   </label>
                   <textarea
@@ -294,7 +306,7 @@ const ContactSection = () => {
                     onChange={handleInputChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200 resize-none"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200 resize-none"
                     placeholder="Tell me about your project or idea..."
                   />
                 </div>
@@ -325,7 +337,7 @@ const ContactSection = () => {
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="flex items-center gap-2 p-4 rounded-lg bg-green-50 dark:bg-green-900/20 text-green-800 dark:text-green-200 border border-green-200 dark:border-green-800"
+                    className="flex items-center gap-2 p-4 rounded-lg bg-emerald-50 dark:bg-emerald-900/20 text-emerald-900 dark:text-emerald-100 border border-emerald-200 dark:border-emerald-800"
                   >
                     <CheckCircle className="w-5 h-5" />
                     <span>

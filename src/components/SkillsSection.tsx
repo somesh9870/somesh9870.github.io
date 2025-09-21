@@ -239,8 +239,8 @@ const SkillsSection = () => {
                     className="flex gap-4 p-6 bg-card border border-border rounded-xl hover:shadow-lg transition-shadow duration-300"
                   >
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-lg bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
-                        <Icon className="w-6 h-6 text-green-600 dark:text-green-400" />
+                      <div className="w-12 h-12 rounded-lg bg-slate-100 dark:bg-slate-800/50 flex items-center justify-center">
+                        <Icon className="w-6 h-6 text-slate-700 dark:text-slate-300" />
                       </div>
                     </div>
                     <div className="space-y-2">
@@ -274,7 +274,7 @@ const SkillsSection = () => {
                   (tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300 rounded-full text-sm font-medium"
+                      className="px-3 py-1 bg-amber-100 text-amber-900 dark:bg-amber-900/30 dark:text-amber-200 rounded-full text-sm font-medium border border-amber-200 dark:border-amber-800"
                     >
                       Currently Learning: {tech}
                     </span>
