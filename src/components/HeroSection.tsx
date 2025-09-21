@@ -6,8 +6,11 @@ import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
 
 const HeroSection = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
+
     const updateMousePosition = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
@@ -51,28 +54,29 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20" />
 
         {/* Floating Particles */}
-        {[...Array(50)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-2 h-2 bg-blue-400/30 rounded-full"
-            initial={{
-              x:
-                Math.random() *
-                (typeof window !== "undefined" ? window.innerWidth : 1000),
-              y:
-                Math.random() *
-                (typeof window !== "undefined" ? window.innerHeight : 800),
-            }}
-            animate={{
-              x: mousePosition.x + (Math.random() - 0.5) * 100,
-              y: mousePosition.y + (Math.random() - 0.5) * 100,
-            }}
-            transition={{
-              duration: Math.random() * 2 + 1,
-              ease: "easeOut",
-            }}
-          />
-        ))}
+        {isClient &&
+          [...Array(50)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute w-2 h-2 bg-blue-400/30 rounded-full"
+              initial={{
+                x:
+                  Math.random() *
+                  (typeof window !== "undefined" ? window.innerWidth : 1000),
+                y:
+                  Math.random() *
+                  (typeof window !== "undefined" ? window.innerHeight : 800),
+              }}
+              animate={{
+                x: mousePosition.x + (Math.random() - 0.5) * 100,
+                y: mousePosition.y + (Math.random() - 0.5) * 100,
+              }}
+              transition={{
+                duration: Math.random() * 2 + 1,
+                ease: "easeOut",
+              }}
+            />
+          ))}
 
         {/* Grid Pattern */}
         <div className="absolute inset-0 opacity-40">
