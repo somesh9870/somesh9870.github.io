@@ -10,7 +10,6 @@ import {
   Send,
   Github,
   Linkedin,
-  Twitter,
   CheckCircle,
   AlertCircle,
 } from "lucide-react";
@@ -45,12 +44,35 @@ const ContactSection = () => {
     e.preventDefault();
     setStatus("loading");
 
-    // Simulate form submission
-    setTimeout(() => {
-      setStatus("success");
-      setFormData({ name: "", email: "", subject: "", message: "" });
-      setTimeout(() => setStatus("idle"), 3000);
-    }, 2000);
+    try {
+      // Using Formspree for form submission
+      const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID || "mnngadqz";
+      const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+        setTimeout(() => setStatus("idle"), 5000);
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 5000);
+    }
   };
 
   const contactInfo = [
@@ -86,12 +108,6 @@ const ContactSection = () => {
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/somesh-rawat/",
       color: "hover:text-blue-600",
-    },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com/somesh9870",
-      color: "hover:text-blue-400",
     },
   ];
 
